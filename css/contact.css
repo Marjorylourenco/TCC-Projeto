@@ -1,0 +1,285 @@
+@import url("./variables.css");
+
+.wrapper {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: grid;
+  column-gap: 16px;
+  padding: 4px 16px 48px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr auto;
+}
+
+.header,
+.main-content,
+.footer {
+  grid-column: span 4;
+}
+
+.header {
+  grid-row-start: 1;
+}
+
+.logo {
+  margin: 0 auto 16px auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.search-box {
+  position: relative;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  color: var(--white-color);
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.search-input {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  padding: 0 4px;
+  margin-top: 2px;
+  position: absolute;
+  right: 0;
+}
+
+.input-on {
+  display: block;
+}
+
+.nav-search:hover,
+.nav-search:focus,
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--hover-primary-color);
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-content {
+  margin: 16px 0 0;
+  background-color: var(--secondary-background-color);
+  grid-row-start: 2;
+  padding: 16px;
+}
+
+.contact-title {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.contact-details {
+  margin-bottom: 16px;
+}
+
+.contact-address {
+  margin-bottom: 16px;
+}
+
+.contact-phone {
+  margin-bottom: 8px;
+  background-color: var(--primary-color);
+  padding: 24px 32px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.contact-location {
+  background-color: var(--primary-color);
+  padding: 24px 32px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.business-hours {
+  color: #354421;
+}
+
+.hours-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.social-title {
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.social-handle {
+  color: #354421;
+}
+
+.location {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.footer {
+  grid-row-start: 3;
+  height: 64px;
+  background-color: var(--primary-color);
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .header,
+  .main-content,
+  .footer {
+    grid-column: 2 / 8;
+  }
+
+  .main-content {
+    padding: 24px;
+    margin: 24px 0 0;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    column-gap: 24px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .search-input {
+    width: inherit;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-phone {
+    margin-bottom: 16px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-details {
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+  }
+
+  .business-hours {
+    font-size: 20px;
+  }
+
+  .hours-title {
+    font-size: 20px;
+  }
+
+  .social-title {
+    font-size: 24px;
+  }
+
+  .social-handle {
+    font-size: 20px;
+  }
+
+  .location {
+    margin-top: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .header,
+  .main-content,
+  .footer {
+    grid-column: 3 / 11;
+  }
+
+  .main-content {
+    padding: 24px;
+    margin: 32px 0 0;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    column-gap: 24px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .search-input {
+    width: inherit;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-phone {
+    margin-bottom: 16px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact-details {
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+  }
+
+  .business-hours {
+    font-size: 20px;
+  }
+
+  .hours-title {
+    font-size: 20px;
+  }
+
+  .weekdays-hours {
+    margin-bottom: 32px;
+  }
+
+  .social-title {
+    font-size: 24px;
+  }
+
+  .social-handle {
+    font-size: 20px;
+  }
+
+  .location {
+    margin-top: 0;
+    height: 100%;
+  }
+}
