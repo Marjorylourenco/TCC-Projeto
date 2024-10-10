@@ -243,6 +243,12 @@
     grid-auto-columns: calc((100% / 4));
     height: calc(100% - 36px - 24px);
   }
+
+  .btn-left{
+    
+    margin-block-start: 10%;
+   left: 80%;
+  }
 }
 
 

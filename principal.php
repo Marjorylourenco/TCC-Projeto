@@ -46,14 +46,7 @@
         button:hover {
             background-color: #5a6f34;
         }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            background-color: #6b8841;
-            color: white;
-            padding: 10px 0;
-            width: 50%; /* Largura total do footer */
-        }
+     
     </style>
 </head>
 <body>
@@ -67,8 +60,6 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Grãos & Cia.</p>
-    </footer>
+    
 </body>
 </html>

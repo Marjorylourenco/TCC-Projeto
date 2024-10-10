@@ -60,14 +60,7 @@
         input[type="submit"]:hover {
             background-color: #5a6e34;
         }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            background-color: #6b8841; /* Cor do footer */
-            color: white; /* Cor do texto no footer */
-            padding: 10px 0; /* Espaçamento interno do footer */
-            width: 50%; /* Largura total */
-        }
+      
     </style>
 </head>
 <body>
@@ -90,8 +83,6 @@
             <input type="submit" value="Cadastrar">
         </form>
     </div>
-    <footer>
-        <p>&copy; 2024 Grãos & Cia.</p>
-    </footer>
+
 </body>
 </html>

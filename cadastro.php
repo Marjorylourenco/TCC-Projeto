@@ -63,15 +63,7 @@
         input[type="submit"]:hover {
             background-color: #5a6f34;
         }
-        footer {
-            margin-top:20px; /* Faz o footer ficar na parte inferior */
-            text-align: center;
-            background-color: #6b8841;
-            color: white;
-            padding: 10px 0;
-            width: 50%; /* Largura total do footer */
-        }
-
+      
        
     </style>
 </head>
@@ -95,12 +87,10 @@
             <label for="codigo_produto">Código do Produto:</label>
             <input type="text" id="codigo_produto" name="codigo_produto" required>
 
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Cadastrar"> 
+            <input type="submit" value="Voltar">
         </form>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Grãos & Cia.</p>
-    </footer>
 </body>
 </html>

@@ -66,15 +66,7 @@
         input[type="submit"]:hover {
             background-color: #5a6f34;
         }
-        footer {
-            margin-top:20px; /* Faz o footer ficar na parte inferior */
-            text-align: center;
-            background-color: #6b8841;
-            color: white;
-            padding: 10px 0;
-            width: 50%; /* Largura total do footer */
-        }
-
+       
        
     </style>
 </head>
@@ -94,17 +86,19 @@
     </div>
 
     <?php
-        if(isset($_POST['login']) && isset($_POST['senha'])){
-            if($_POST['login']=="admin" && $_POST['senha']=="admin"){
-                session_start();
-                header("location:principal.php");
-            }
-        }
-    ?>
+if (isset($_POST['login']) && isset($_POST['senha'])) {
+    if ($_POST['login'] == "admin" && $_POST['senha'] == "admin") {
+        session_start();
+        header("location:principal.php");
+        exit(); // Adiciona exit após o redirecionamento
+    } else {
+        echo '<script>alert("acesso restrito!");</script>';
+    }
+}
+?>
 
-    <footer>
-        <p>&copy; 2024 Grãos & Cia.</p>
-    </footer>
+
+   
 </body>
 </html>
 
